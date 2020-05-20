@@ -1,5 +1,5 @@
 #
-# robots.txt
+### robots.txt
 #
 # This file is to prevent the crawling and indexing of certain parts
 # of your site by web crawlers and spiders run by sites like Yahoo!
@@ -11,43 +11,13 @@
 # Ignored: http://example.com/site/robots.txt
 #
 # For more information about the robots.txt standard, see:
-# http://www.robotstxt.org/robotstxt.html
+# http://www.robotstxt.org/wc/robots.html
+#
+# For syntax checking, see:
+# http://www.sxw.org.uk/computing/robots/check.html
 
 User-agent: *
 Crawl-delay: 10
-# CSS, JS, Images
-Allow: /misc/*.css$
-Allow: /misc/*.css?
-Allow: /misc/*.js$
-Allow: /misc/*.js?
-Allow: /misc/*.gif
-Allow: /misc/*.jpg
-Allow: /misc/*.jpeg
-Allow: /misc/*.png
-Allow: /modules/*.css$
-Allow: /modules/*.css?
-Allow: /modules/*.js$
-Allow: /modules/*.js?
-Allow: /modules/*.gif
-Allow: /modules/*.jpg
-Allow: /modules/*.jpeg
-Allow: /modules/*.png
-Allow: /profiles/*.css$
-Allow: /profiles/*.css?
-Allow: /profiles/*.js$
-Allow: /profiles/*.js?
-Allow: /profiles/*.gif
-Allow: /profiles/*.jpg
-Allow: /profiles/*.jpeg
-Allow: /profiles/*.png
-Allow: /themes/*.css$
-Allow: /themes/*.css?
-Allow: /themes/*.js$
-Allow: /themes/*.js?
-Allow: /themes/*.gif
-Allow: /themes/*.jpg
-Allow: /themes/*.jpeg
-Allow: /themes/*.png
 # Directories
 Disallow: /includes/
 Disallow: /misc/
@@ -88,3 +58,18 @@ Disallow: /?q=user/password/
 Disallow: /?q=user/register/
 Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
+
+# CUSTOM
+Disallow: /search
+Disallow: /university-search
+Disallow: /training1
+Disallow: /sites/default/files/webform/
+
+# FIT-1785 - 06/06/2016
+Disallow: /*?quicktabs_*
+Disallow: /*&quicktabs_*
+Disallow: /*?qt-*
+Disallow: /*&qt-*
+
+# EXPRESS
+Disallow: /p1*
